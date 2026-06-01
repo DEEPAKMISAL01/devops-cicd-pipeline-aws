@@ -9,7 +9,8 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/DEEPAKMISAL01/devops-cicd-pipeline-aws.git'
+                git branch: 'main',
+    url: 'https://github.com/DEEPAKMISAL01/devops-cicd-pipeline-aws.git'
             }
         }
 
